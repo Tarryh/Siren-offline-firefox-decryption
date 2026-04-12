@@ -1,0 +1,44 @@
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Sirene offline firefox decryption.exe
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Sirene offline firefox decryption.deps.json
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Sirene offline firefox decryption.runtimeconfig.json
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Sirene offline firefox decryption.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Sirene offline firefox decryption.pdb
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\SixLabors.ImageSharp.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-riscv64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.csproj.AssemblyReference.cache
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.AssemblyInfoInputs.cache
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.AssemblyInfo.cs
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.csproj.CoreCompileInputs.cache
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene o.BC9CAC0F.Up2Date
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\refint\Sirene offline firefox decryption.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.pdb
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.genruntimeconfig.cache
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\ref\Sirene offline firefox decryption.dll
