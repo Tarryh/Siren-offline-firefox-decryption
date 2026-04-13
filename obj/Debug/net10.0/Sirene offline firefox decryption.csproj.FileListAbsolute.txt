@@ -42,3 +42,4 @@ C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\D
 C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.pdb
 C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.genruntimeconfig.cache
 C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\ref\Sirene offline firefox decryption.dll
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\obj\Debug\net10.0\Sirene offline firefox decryption.sourcelink.json

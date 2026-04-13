@@ -113,7 +113,7 @@ foreach (KeyValuePair<string, string> s in UKVP)
 int chosen = int.Parse(System.Console.ReadLine());
 string all_webp_ids = "";
 Console.Clear();
-System.Console.WriteLine("Paste the folder destination you want your output to be in (without double quotes); the folder must already exist: ");
+System.Console.WriteLine("Paste the folder destination you want your output to be in (without double quotes): ");
 string folder_output = System.Console.ReadLine();
 if(!Directory.Exists(folder_output))
 {
@@ -124,12 +124,28 @@ if(System.Console.ReadLine().Trim() == "Y")
 {
     //SEPARATE FOLDERS
     System.Console.WriteLine("Doing the magic...");
+        string folder_input = sqlite_path.Substring(0, sqlite_path.Length-6) + @"files\";
     foreach(KeyValuePair<string, byte[]> all_selected_chapters in AKVP)
     {
+        all_webp_ids = "";
         try{
             if (all_selected_chapters.Key.Contains(manga_ids[chosen-1]))
             {
                 all_webp_ids = Encoding.UTF8.GetString(all_selected_chapters.Value);
+                foreach(string file_id in all_webp_ids.Split())
+                {
+                    string tmp_input = folder_input + file_id;
+                    string output_checker = folder_output + @"\" + all_selected_chapters.Key;
+                    if(!Directory.Exists(output_checker))
+                    {
+                        Directory.CreateDirectory(output_checker);
+                    }
+                    string tmp_output = output_checker + @"\" + file_id + ".png";
+                    using(Image img = Image.Load(tmp_input))
+                    {
+                        img.Save(tmp_output, new PngEncoder());
+                    }
+                }
             }
         } catch(Exception exc)
         {
@@ -140,34 +156,18 @@ if(System.Console.ReadLine().Trim() == "Y")
                 System.Console.WriteLine(exc.Message);
             }
         }
-    
-        string folder_input = sqlite_path.Substring(0, sqlite_path.Length-6) + @"files\";
-        foreach(string file_id in all_webp_ids.Split())
-        {
-            string tmp_input = folder_input + file_id;
-            string output_checker = folder_output + @"\" + all_selected_chapters.Key;
-            if(!Directory.Exists(output_checker))
-            {
-                Directory.CreateDirectory(output_checker);
-            }
-            string tmp_output = output_checker + @"\" + file_id + ".png";
-            using(Image img = Image.Load(tmp_input))
-            {
-                img.Save(tmp_output, new PngEncoder());
-            }
-        }
     }
     System.Console.WriteLine("Do you also want .cbz files, a common manga extension; Type 'Y' in case you do");
     if(System.Console.ReadLine().Trim() == "Y")
     {
         System.Console.WriteLine("Paste the folder destination you want your output to be in, it cant be inside the folder from before (without double quotes): ");
         string zip_output = System.Console.ReadLine();
-        if(!Directory.Exists(zip_output))
-        {
-            Directory.CreateDirectory(zip_output);
-        }
         foreach(string directory in Directory.GetDirectories(folder_output))
         {
+            if(!Directory.Exists(zip_output))
+            {
+                Directory.CreateDirectory(zip_output);
+            }
             ZipFile.CreateFromDirectory(directory, zip_output + @"\" + directory.Substring(directory.LastIndexOf(@"\") + 1) + ".cbz");
         }
     }
