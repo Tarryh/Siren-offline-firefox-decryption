@@ -1,0 +1,2 @@
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Release\net10.0\win-x64\publish\Sirene offline firefox decryption.pdb
+C:\Users\Steve\Documents\Code\Sirene Ext\Sirene offline firefox decryption\bin\Release\net10.0\win-x64\publish\Sirene offline firefox decryption.exe

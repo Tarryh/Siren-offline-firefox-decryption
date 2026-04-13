@@ -112,33 +112,91 @@ foreach (KeyValuePair<string, string> s in UKVP)
 //GET ALL THE FILES THAT NEED TO BE CONVERTED
 int chosen = int.Parse(System.Console.ReadLine());
 string all_webp_ids = "";
-foreach(KeyValuePair<string, byte[]> all_selected_chapters in AKVP)
+Console.Clear();
+System.Console.WriteLine("Paste the folder destination you want your output to be in (without double quotes); the folder must already exist: ");
+string folder_output = System.Console.ReadLine();
+if(!Directory.Exists(folder_output))
 {
-    try{
-        if (all_selected_chapters.Key.Contains(manga_ids[chosen-1]))
-        {
-            string chapter_pages = Encoding.UTF8.GetString(all_selected_chapters.Value);
-            all_webp_ids += chapter_pages;
-            all_webp_ids += " ";
-        }
-    } catch(Exception exc)
+    Directory.CreateDirectory(folder_output);
+}
+System.Console.WriteLine("Do you want to separate the chapters in different folders? Type 'Y' for yes");
+if(System.Console.ReadLine().Trim() == "Y")
 {
-    Console.Clear();
-    System.Console.WriteLine("The number wasnt in displayed range; Type 'Y' for more info");
-    if (System.Console.ReadLine().Trim() == "Y")
+    //SEPARATE FOLDERS
+    System.Console.WriteLine("Doing the magic...");
+    foreach(KeyValuePair<string, byte[]> all_selected_chapters in AKVP)
     {
-        System.Console.WriteLine(exc.Message);
+        try{
+            if (all_selected_chapters.Key.Contains(manga_ids[chosen-1]))
+            {
+                all_webp_ids = Encoding.UTF8.GetString(all_selected_chapters.Value);
+            }
+        } catch(Exception exc)
+        {
+            Console.Clear();
+            System.Console.WriteLine("The number wasnt in displayed range; Type 'Y' for more info");
+            if (System.Console.ReadLine().Trim() == "Y")
+            {
+                System.Console.WriteLine(exc.Message);
+            }
+        }
+    
+        string folder_input = sqlite_path.Substring(0, sqlite_path.Length-6) + @"files\";
+        foreach(string file_id in all_webp_ids.Split())
+        {
+            string tmp_input = folder_input + file_id;
+            string output_checker = folder_output + @"\" + all_selected_chapters.Key;
+            if(!Directory.Exists(output_checker))
+            {
+                Directory.CreateDirectory(output_checker);
+            }
+            string tmp_output = output_checker + @"\" + file_id + ".png";
+            using(Image img = Image.Load(tmp_input))
+            {
+                img.Save(tmp_output, new PngEncoder());
+            }
+        }
+    }
+    System.Console.WriteLine("Do you also want .cbz files, a common manga extension; Type 'Y' in case you do");
+    if(System.Console.ReadLine().Trim() == "Y")
+    {
+        System.Console.WriteLine("Paste the folder destination you want your output to be in, it cant be inside the folder from before (without double quotes): ");
+        string zip_output = System.Console.ReadLine();
+        if(!Directory.Exists(zip_output))
+        {
+            Directory.CreateDirectory(zip_output);
+        }
+        foreach(string directory in Directory.GetDirectories(folder_output))
+        {
+            ZipFile.CreateFromDirectory(directory, zip_output + @"\" + directory.Substring(directory.LastIndexOf(@"\") + 1) + ".cbz");
+        }
     }
 }
-}
-string[] all_tmp_webp = all_webp_ids.Split();
-string[] all_webp = all_tmp_webp.Take(all_tmp_webp.Length-1).ToArray(); //.Split creates an empty last slot
+else //NO SEPARATE FOLDERS
+{
+    foreach(KeyValuePair<string, byte[]> all_selected_chapters in AKVP)
+    {
+        try{
+            if (all_selected_chapters.Key.Contains(manga_ids[chosen-1]))
+            {
+                string chapter_pages = Encoding.UTF8.GetString(all_selected_chapters.Value);
+                all_webp_ids += chapter_pages;
+                all_webp_ids += " ";
+            }
+        } catch(Exception exc)
+        {
+            Console.Clear();
+            System.Console.WriteLine("The number wasnt in displayed range; Type 'Y' for more info");
+            if (System.Console.ReadLine().Trim() == "Y")
+            {
+                System.Console.WriteLine(exc.Message);
+            }
+        }
+    }
+    string[] all_webp_string = all_webp_ids.Split();
+    string[] all_webp = all_webp_string.Take(all_webp_string.Length-1).ToArray(); //.Split creates an empty last slot
 
-//THE MAGIC
-
-    Console.Clear();
-    System.Console.WriteLine("Paste the folder destination you want your output to be in (without double quotes); the folder must already exist: ");
-    string folder_output = System.Console.ReadLine();
+    //THE MAGIC FOR NO FOLDERS
     System.Console.WriteLine("Doing the magic...");
     string folder_input = sqlite_path.Substring(0, sqlite_path.Length-6) + @"files\";
     foreach(string file_id in all_webp)
@@ -147,42 +205,22 @@ string[] all_webp = all_tmp_webp.Take(all_tmp_webp.Length-1).ToArray(); //.Split
         string tmp_output = folder_output + @"\" + file_id + ".png";
         using(Image img = Image.Load(tmp_input))
         {
-            try
-            {
-                img.Save(tmp_output, new PngEncoder());
-            } catch(Exception exc)
-            {
-                Console.Clear();
-                System.Console.WriteLine("Incorrect path; Type 'Y' for more info");
-                if (System.Console.ReadLine().Trim() == "Y")
-                {
-                    System.Console.WriteLine(exc.Message);
-                    Console.ReadLine();
-                }
-            }
+            img.Save(tmp_output, new PngEncoder());
         }
     }
-
-
-//.ZIP
-System.Console.WriteLine("Do you also want a .cbz file, a common manga extension; Type 'Y' in case you do");
-if(System.Console.ReadLine().Trim() == "Y")
-{
-    System.Console.WriteLine("Paste the folder destination you want your output to be in, it cant be the same folder (without double quotes): ");
-    string zip_output = System.Console.ReadLine() + @"\" + manga_ids[chosen-1].Substring(1) + ".cbz";
-    string zip_input = folder_output + @"\";
-    try
+    //.ZIP
+    System.Console.WriteLine("Do you also want a .cbz file, a common manga extension; Type 'Y' in case you do");
+    if(System.Console.ReadLine().Trim() == "Y")
     {
-        ZipFile.CreateFromDirectory(zip_input, zip_output);
-    } catch(Exception exc)
-    {
-        Console.Clear();
-        System.Console.WriteLine("Incorrect path; Type 'Y' for more info");
-        if (System.Console.ReadLine().Trim() == "Y")
+        System.Console.WriteLine("Paste the folder destination you want your output to be in, it cant be inside the folder from before (without double quotes): ");
+        string zip_output = System.Console.ReadLine();
+        if(!Directory.Exists(zip_output))
         {
-            System.Console.WriteLine(exc.Message);
-            Console.ReadLine();
+            Directory.CreateDirectory(zip_output);
         }
+        zip_output += @"\" + manga_ids[chosen-1].Substring(1) + ".cbz";
+        string zip_input = folder_output + @"\";
+        ZipFile.CreateFromDirectory(zip_input, zip_output);
     }
 }
 System.Console.WriteLine();
