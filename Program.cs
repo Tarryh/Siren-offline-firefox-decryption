@@ -225,3 +225,4 @@ else //NO SEPARATE FOLDERS
 }
 System.Console.WriteLine();
 System.Console.WriteLine("Thank you for trusting my program. You can safely close the window.");
+Console.ReadLine();
