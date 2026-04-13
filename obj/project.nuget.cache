@@ -1,16 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "sA6sux2KtOE=",
+  "dgSpecHash": "ilSzdcfXWLY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Steve\\Documents\\Code\\Sirene Ext\\Sirene offline firefox decryption\\Sirene offline firefox decryption.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.data.sqlite\\10.0.5\\microsoft.data.sqlite.10.0.5.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.5\\microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.5\\microsoft.net.illink.tasks.10.0.5.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\sixlabors.imagesharp\\3.1.12\\sixlabors.imagesharp.3.1.12.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
-    "C:\\Users\\Steve\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
+    "C:\\Users\\Steve\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.5\\microsoft.netcore.app.runtime.win-x64.10.0.5.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.5.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.5\\microsoft.aspnetcore.app.runtime.win-x64.10.0.5.nupkg.sha512"
   ],
   "logs": []
 }

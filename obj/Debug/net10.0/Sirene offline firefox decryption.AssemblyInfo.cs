@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sirene offline firefox decryption")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed22bca838cf9fb9b4dbd94e6eb4fbb784ef607c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d88a203195fd16def5121204df9fbbfd5a7318f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sirene offline firefox decryption")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sirene offline firefox decryption")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
