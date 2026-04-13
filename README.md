@@ -1,12 +1,13 @@
+The extension in question: https://github.com/Hhennyb/Siren
+
 # I am an amateur coder
 It should work flawlessly but i cannot guarantee it.
-Please fork or contact me for possible optimisations
+Please fork or contact me for possible optimisations.
 
 ## How it works
 
 When you download manga chapters with Siren, the data and the .webp files get encrypted and stored inside of Firefox files as binary data.
 This tool decrypts them, converts all the .webp files (the manga) to .png and puts them in a foledr of your choice; it can also spit out a .cbz file.
-
 
 ## How to run
 The tool works completely offline, but the manga needs to have been downloaded beforehand for it to work tho.
